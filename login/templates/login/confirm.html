@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}
+注册确认
+{% endblock %}
+{% block content %}
+    {% if message %}
+    <div class="row">
+        <h1 class="text-center">{{ message }}</h1>
+    </div>
+    {% endif %}
+
+    <script>
+    window.setTimeout("window.location='/login/'", 2000)
+    </script>
+{% endblock %}
